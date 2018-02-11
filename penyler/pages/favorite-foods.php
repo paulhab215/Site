@@ -17,20 +17,44 @@ include ('header.html');
       <p>Below are my top choices of food places in Austin - you can click on the name of each place to see where they are located within the city and also find more information in their infowindow. I have only been here for a year so am not a veteran in Austin food but with more time I will cover more territory.</p>
       <div class="map_canvas" id="map" style="width: 900px; height: 500px; margin:0 auto;"></div>
       <br>
-      <div id="foodlist">
-        <table align="center" cellspacing="0" cellpadding="5" width="75%">
-          <tr>
-            <td align="left"><b>Name</b></td>
-          </tr>
+      <h1>Restaurants</h1>
+      <div class="scrollable">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Paul's Rank</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#">Value 1</a></td>
+              <td>Value 2</td>
+              <td>Value 3</td>
+            </tr>
+            <tr>
+              <td><a href="#">Value 5</td>
+              <td>Value 6</td>
+              <td>Value 7</td>
+            </tr>
+            <tr>
+              <td><a href="#">Value 9</td>
+              <td>Value 10</td>
+              <td>Value 11</td>
+            </tr>
+            <tr>
+              <td><a href="#">Value 13</td>
+              <td>Value 14</a></td>
+              <td>Value 15</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
     <div class="clear"></div>
   </main>
 </div>
-<?php
-include ('footer.html');
-?>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCReRGxwYW71hK5_AdwvxTkv0WN6lp5EpI&callback"></script>
   <script type="text/javascript">
     var map;
@@ -141,5 +165,6 @@ include ('footer.html');
   <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCReRGxwYW71hK5_AdwvxTkv0WN6lp5EpI&callback=initMap">
   </script>
-</body>
-</html>
+<?php
+include ('footer.html');
+?>

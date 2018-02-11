@@ -7,22 +7,14 @@
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body id="top">
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- Top Background Image Wrapper -->
 <div class="bgded overlay" style="background-image:url('images/demo/backgrounds/mountain.jpg');"> 
-  <!-- ################################################################################################ -->
   <div class="wrapper">
     <header id="header" class="hoc clear">
       <div id="logo"> 
-        <!-- ################################################################################################ -->
         <h1><a href="index.html">Paul Habjanetz</a></h1>
         <p>Through knowledge - all things make sense</p>
-        <!-- ################################################################################################ -->
       </div>
       <nav id="mainav" class="clear"> 
-        <!-- ################################################################################################ -->
         <ul class="clear">
           <li class="active"><a href="#">Home</a></li>
           <li><a class="drop" href="#">Projects</a>
@@ -30,10 +22,9 @@
               <li><a href="projects/WeatherApp/index.htm">Weather API</a></li>
               <li><a href="pages/full-width.html">Bootstrap Social</a></li>
               <li><a href="pages/sidebar-left.html">JS Grid</a></li>
-              <li><a href="pages/sidebar-right.html">Machine Learning</a></li>
+              <li><a href="projects/customLogin/login.php">Custom Login Page</a></li>              
             </ul>
           </li>
-          
           <li><a class="drop" href="pages/aboutme.php">About Me</a>
             <ul>
               <li><a href="pages/resume.php">Resume</a></li>
@@ -42,7 +33,7 @@
               <li><a href="gallery.php">Gallery</a></li>
             </ul>
           </li>
-          <li><a href="#">Trivia</a></li>
+          <li><a href="pages/contact.php">Contact</a></li>
         </ul>
       </nav>
     </header>
