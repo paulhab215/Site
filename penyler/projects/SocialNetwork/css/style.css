@@ -1,0 +1,176 @@
+header{
+	/* gives us a blue color for the background - white text*/
+	background-image: linear-gradient(#04519b, #044687 60%, #033769);
+	color:#fff;
+	min-height:100px;
+	padding-top:25px;
+}
+
+header form{
+	float:right;
+}
+
+header .logo{
+	float:left;
+}
+
+.panel-heading{
+	background-image: linear-gradient(#04519b, #044687 60%, #033769);
+	color:#fff !important;	/* add import since you are having to override Bootstraps predefinied CSS */
+}
+
+.bubble{
+	position:relative; /* puts the item relative to its normal position */
+	width:100%;
+	min-height:65px;
+	padding:15px;
+	background:#fff;
+	border-radius: 10px;
+	border:1px solid #ccc;
+}
+ 
+
+/*the top layer of the bubble */
+.bubble:after{
+	content:'';
+	position:absolute;
+	border-style:solid;
+	border-width:15px 15px 15px 0;
+	border-color:transparent #fff;
+	display:block;
+	width:0;
+	z-index:1;
+	margin-top:-15px;
+	left:-15px;
+	top:50%;
+}
+/* border-width: 15px 15px 15px 0; removes the left, like you said
+
+border-color: transparent black; this hides the green and the red (red and green can not have zero width, otherwise you'd have a black rectangle)
+
+content: ''; removes the white, i.e. squeezes the top and bottom together
+*/
+
+/*the bottom layer of the bubble */
+.bubble:before{
+	content:'';
+	position:absolute;
+	border-style:solid;
+	border-width:15px 15px 15px 0;
+	border-color:transparent #ccc;
+	display:block;
+	width:0;
+	z-index:0;
+	margin-top:-15px;
+	left:-16px;
+	top:50%;
+}
+
+/*stretch the form group for user comments to the most of width */
+.comment-form .form-group{
+	width:90%;
+}
+
+/*stretch the input for user comments to full width */
+.comment-form input[type='text']{
+	width:100%;
+}
+
+.comment-avatar img{
+	width:40px;
+	margin-right:5px;
+}
+
+/*build spaced out borders around the users comments and create a scroll bar if overflow - width of entire form.group*/
+.comment{
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding:3px;
+	margin:5px 0;
+	overflow:auto;
+	width:100%;
+}
+
+.post-actions{
+	margin:5px;
+}
+
+/* reduce size of comment avatar */
+.comment-avatar img{
+	width:40px;
+	margin-right:5px;
+}
+
+.friends li{
+	list-style: none;
+	padding:0 5px;
+	display:inline;	/* display photo and line on the same line */
+	float:left;	/* float image left */
+}
+
+/* reduce friends image size */
+.friends img{
+	width:55px;
+}
+
+.groups img{
+	width:80px;
+	float:left;
+	margin-right:15px;
+}
+
+.group-item{
+	padding-bottom:10px;
+	margin-bottom:20px;
+	border-bottom:1px solid #ccc; /* creates line under group item since many items per panel */
+	overflow:auto; /* scroll bar if needed to view content */
+}
+
+ /* give a border and space out */
+.members .member-row{
+	border-bottom:1px solid #ccc;
+	padding-bottom:20px;
+	margin-bottom:20px;
+}
+
+ /* push down image */
+.members img{
+	margin-bottom:5px;
+	margin:auto !important;
+    display:block !important; /* center image over buttons */
+}
+
+.photos{
+	margin:0;
+	padding:0;
+}
+
+.photos li{
+	list-style: none;
+	float:left;
+	margin:5px;
+	width:23%;  /* gives 4 images per frow */
+}
+
+.photos img{
+	width:100%;
+}
+
+
+footer{
+	background:#f4f4f4;
+	height:90px;
+	color:#04519b;
+	font-weight: bold;
+	text-align: center;
+	padding-top:40px;
+	margin-top:30px;
+	border-top:7px solid #04519b;
+}
+
+ /* if the buttons are on screen greater then 991 and the buttons are not stacking then push buttons down */
+@media(min-width: 991px){
+	.members p{
+		padding-top:40px;
+	}
+}

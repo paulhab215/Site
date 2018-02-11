@@ -20,7 +20,7 @@
           <li><a class="drop" href="#">Projects</a>
             <ul>
               <li><a href="projects/WeatherApp/index.htm">Weather API</a></li>
-              <li><a href="pages/full-width.html">Bootstrap Social</a></li>
+              <li><a href="projects/SocialNetwork/social.html">Social Networking</a></li>
               <li><a href="pages/sidebar-left.html">JS Grid</a></li>
               <li><a href="projects/customLogin/login.php">Custom Login Page</a></li>              
             </ul>
