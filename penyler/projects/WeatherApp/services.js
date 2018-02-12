@@ -11,7 +11,6 @@ weatherApp.service('weatherService', ['$resource', function($resource) {
     key = '90672998528bf2b76431cb704b8e1533';
 
         weatherResult = weatherAPI.get({ q: city, cnt: days, APPID: key});
-        console.log(weatherResult);
         return weatherResult
     };
     

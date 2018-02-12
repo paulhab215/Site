@@ -30,7 +30,6 @@
               <li><a href="pages/resume.php">Resume</a></li>
               <li><a href="pages/life-timeline.php">TimeLine</a></li>
               <li><a href="pages/favorite-foods.php">Favorite Foods</a></li>
-              <li><a href="gallery.php">Gallery</a></li>
             </ul>
           </li>
           <li><a href="pages/contact.php">Contact</a></li>
@@ -108,12 +107,11 @@
 </div>
 <div class="bgded overlay" style="background-image:url('images/demo/backgrounds/blackfloral.jpg');">
   <footer id="footer" class="hoc clear center"> 
-    <!-- ################################################################################################ -->
     <h3 class="heading uppercase">Habjanetz</h3>
     <ul class="faico clear">
-      <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+      <li><a class="faicon-dribble" href="https://www.reddit.com/"><i class="fa fa-dribbble"></i></a></li>
       <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-      <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+      <li><a class="faicon-google-plus" href="https://plus.google.com/u/0/111465776023951134474"><i class="fa fa-google-plus"></i></a></li>
     </ul>
   </footer>
   <div id="copyright" class="hoc clear center"> 
