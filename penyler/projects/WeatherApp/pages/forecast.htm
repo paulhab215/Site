@@ -1,15 +1,45 @@
 <p>
     <a href="#/">Back to Search</a>
 </p>
-
-Forecast for {{ city }}
+Forecast for {{ city }} based on <a href="http://openweathermap.org/">Open Weather Map</a>
 <hr />
 Days: <a href="#/forecast/2" ng-class="{ 'bg-primary': days === '2' }">2</a> | <a href="#/forecast/5" ng-class="{ 'bg-primary': days === '5' }">5</a> | <a href="#/forecast/7" ng-class="{ 'bg-primary': days === '7' }">7</a>
 <hr />
 <div ng-repeat="w in weatherResult.list">
     <div class="row">
         <div class="col-md-12">
-            <weather-report weather-day="w" convert-to-standard="convertToFahrenheit(daytimeTemp)" convert-to-date="convertToDate(dt)" date-format="MMMM d, y"></weather-report>
-        </div>
+			<div class="panel panel-default">
+			    <div class="panel-heading">
+			        <h3 class="panel-title">{{ convertToDate( w.dt ) | date: dateFormat }}</h3>
+			    </div>
+			    <div class="panel-body">
+			   		<div class="panel-body">
+						<div ng-repeat="q in w.weather">
+							<div ng-if="q.main === 'Clear'">
+							  	<div class="col-sm-1" align="center"><img src="../../images/weather/clear_skies.jpg" alt="Clear Skies"></div>
+					   		</div>
+							<div ng-if="q.main === 'Light Rain'">
+							  	<div class="col-sm-1" align="center"><img src="../../images/weather/light_rain.jpg" alt="Light Rain"></div>
+					   		</div>
+							<div ng-if="q.main === 'Rain'">
+							  	<div class="col-sm-1" align="center"><img src="../../images/weather/heavy_rain.jpg" alt="Heavy Rain"></div>
+					   		</div>
+							<div ng-if="q.main === 'Snow'">
+							  	<div class="col-sm-1" align="center"><img src="../../images/weather/snow.jpg" alt="Snowing"></div>
+					   		</div>
+							<div ng-if="q.main === 'Clouds'">
+							  	<div class="col-sm-1" align="center"><img src="../../images/weather/cloudy.jpg" alt="Overcast/Cloudy"></div>
+					   		</div>
+					  </div>
+					  	<div class="col-sm-11">
+					        Daytime Temp: {{ convertToFahrenheit(w.temp.day) }}
+					        <br>
+					        Min/Max:      {{ convertToFahrenheit(w.temp.min) }} / {{ convertToFahrenheit(w.temp.max) }}
+					        <br>
+					        Humidity:     {{ w.humidity }}%
+					  	</div>
+			    </div>
+			</div>        
+		</div>
     </div>
 </div>

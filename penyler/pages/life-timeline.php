@@ -6,7 +6,7 @@ include ('header.html');
   <div id="breadcrumb" class="hoc clear"> 
     <ul>
       <li><a href="aboutme.php">About Me</a></li>
-      <li><a href="#">Life Timeline</a></li>
+      <li><a href="life-timeline.php">Life Timeline</a></li>
     </ul>
   </div>
 </div>
@@ -14,8 +14,8 @@ include ('header.html');
   <main class="hoc container clear"> 
     <div class="content"> 
         <div class="center btmspace-80">
-          <h3 class="heading">Me through the ages</h3>
-          <p class="nospace">Nothing like traveling back in time.</p>
+          <h3 class="heading">Through the Ages</h3>
+          <p class="nospace">Nothing like traveling back in time</p>
         </div>
         <ul class="timeline">
             <li>
@@ -28,6 +28,9 @@ include ('header.html');
                     <div class="timeline-content"><br>
                         <p>Although little about me is known, I started my life in Columbus Ohio on December 18, 1989.</p>
                     </div>
+                    <div class="timeline-footer">
+                        <img src="../images/demo/backgrounds/03.png" width="313" height="500" align="middle">
+                    </div>                    
                 </div>
             </li>
             
@@ -41,6 +44,9 @@ include ('header.html');
                     <div class="timeline-content"><br>
                         <p>I spent very little time enjoying their cold winters before I found myself in Kindergarden here in Texas in the year 1994 as a Garden Ridge Gator.</p>
                     </div>
+                    <div class="timeline-footer">
+                        <img src="../images/demo/backgrounds/03.png" width="313" height="500" align="middle">
+                    </div>                    
                 </div>
             </li>
             
@@ -54,6 +60,9 @@ include ('header.html');
                     <div class="timeline-content"><br>
                         <p>As a participant of many youth organizations I was able to distinguish myself as a leader among children. These opportunities which included adventures into unknown lands helped me develop a sense of independence as well as a comfort in unknown situations.</p>
                     </div>
+                    <div class="timeline-footer">
+                        <img src="../images/demo/backgrounds/03.png" width="313" height="500" align="middle">
+                    </div>                    
                 </div>
             </li>
             
@@ -67,6 +76,9 @@ include ('header.html');
                     <div class="timeline-content"><br>
                         <p>I left high school a man among men and was filled with a hunger for more wordly experience which I satisfied with social interactions and the embarkment towards college.</p>
                     </div>
+                    <div class="timeline-footer">
+                        <img src="../images/demo/backgrounds/03.png" width="313" height="500" align="middle">
+                    </div>                    
                 </div>
             </li>
             
@@ -81,7 +93,7 @@ include ('header.html');
                         <p>Upon the advice of my uncle (a data analyst) I decided to take a computer science class. It didn't even take a week for me to fall in love.</p>
                     </div>
                     <div class="timeline-footer">
-                        <img src="../images/demo/backgrounds/03.png" width="313" height="216" align="middle">
+                        <img src="../images/demo/backgrounds/03.png" width="313" height="500" align="middle">
                     </div>
                 </div>
             </li>
@@ -96,8 +108,8 @@ include ('header.html');
                     <div class="timeline-content"><br>
                         <p>Upon Graduating college I felt that I was prepared for the establishment of a flouring career so I launched my hard working attitude to the ranks of Corrections Software Solutions.</p>
                     </div>
-                    <div class="timeline-footer primary">
-                        <img src="includes/dog.jpg" width="313" height="216" align="middle">
+                    <div class="timeline-footer">
+                        <img src="../images/demo/backgrounds/03.png" width="313" height="500" align="middle">
                     </div>
                 </div>
             </li>

@@ -30,7 +30,7 @@ include ('header.html');
     <div class="content three_quarter"> 
       <div id="comments">
         <h1>Submit through my system</h1>
-        <p>Below are my top choices of food places in Austin - you can click on the name of each place to see where they are located within the city and also find more information in their infowindow. I have only been here for a year so am not a veteran in Austin food but with more time I will cover more territory.</p>
+        <p>I have always highlighted my listening skills as a favorite among my senses. Drop me a line through this form based contact system and I will return your queries in a timely manner.</p>
         <form action="#" method="post">
           <div class="one_third first">
             <label for="name">Name <span>*</span></label>
