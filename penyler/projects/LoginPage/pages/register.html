@@ -1,0 +1,30 @@
+<ul class="mh-menu">
+	<li>
+		<a href="#/login">
+			<span>Login</span>
+		</a>
+	</li>
+	<li>
+		<a href="#/register">
+			<span>Create Account</span>
+		</a>
+		<div class="permahover">
+			<div ng-class="{'loginwrapper': loginerrors == null, 'loginwrappererrors': loginerrors != null }"> 
+				<form class="login" method="post">
+					<input type="hidden" name="register" value="register"/>
+					<input type="text" name="user_name" placeholder="Username" autofocus maxlength="20" /><i class="fa fa-user"></i>
+					<input type="text" name="first_name" placeholder="First Name" maxlength="20"/><i class="fa fa-user"></i>
+					<input type="password" name="pass_main1" placeholder="Password" maxlength="40" /><i class="fa fa-key"></i>
+					<input type="password" name="pass_main2" placeholder="Confirm Password" maxlength="40" /><i class="fa fa-key"></i>
+					<input type="password" name="prov_key" placeholder="Provided Key" maxlength="40" /><i class="fa fa-key"></i>
+					<a id="forgotpass" href="#">Don\'t have a key?</a>
+					<button type="button" class="btn btn-primary btn-block buttonformat" ng-click="checkCred()">Launch Creation</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<a href="#/earnway">
+			<span>Earn Your Way</span>
+		</a>
+	</li>
+</ul>
