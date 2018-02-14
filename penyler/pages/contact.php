@@ -5,7 +5,7 @@ include ('header.html');
 <div class="wrapper row2">
   <div id="breadcrumb" class="hoc clear"> 
     <ul>
-      <li><a href="aboutme.php">Contact Me</a></li>
+      <li><a href="contact.php">Contact Me</a></li>
     </ul>
   </div>
 </div><div class="wrapper row3">

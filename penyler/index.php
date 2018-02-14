@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Suh Dude</title>  
+<title>Paul Habjanetz</title>  
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -17,10 +17,10 @@
       <nav id="mainav" class="clear"> 
         <ul class="clear">
           <li class="active"><a href="#">Home</a></li>
-          <li><a class="drop" href="#">Projects</a>
+          <li><a class="drop" href="pages/projects.php">Projects</a>
             <ul>
               <li><a href="projects/WeatherApp/index.htm">Weather API</a></li>
-              <li><a href="projects/SocialNetwork/social.html">Social Networking</a></li>
+              <li><a href="projects/SocialNetwork/social.html">Social Network Template</a></li>
 <!--               <li><a href="pages/sidebar-left.html">JS Grid</a></li>
  -->              <li><a href="projects/LoginPage/login.php">Custom Login Page</a></li>              
             </ul>
