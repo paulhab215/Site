@@ -13,10 +13,10 @@ include ('header.html');
   </div>
 </div>
 <div class="wrapper row3">
-  <section class="hoc container clear"> 
+  <main class="hoc container clear"> 
     <div class="center btmspace-80">
-      <h3 class="heading">Check out some of my Projects</h3>
-      <p class="nospace">Evaluate my work and see if it is right for you.</p>
+      <h2 class="heading">Check out some of my Projects</h2>
+      <p class="nospace">Evaluate my work and see if it is a right fit for you. Below are some simple exercises I did in order to showcase my project development skills. Ass seen I can work with API's, write to and from a stack as seen with Social Network site, and manage large amounts of data.</p>
     </div>
     <ul class="nospace group cta">
       <li class="one_third first">

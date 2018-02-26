@@ -17,7 +17,7 @@
       </div>
       <nav id="mainav" class="clear"> 
         <ul class="clear">
-          <li class="active"><a href="#">Home</a></li>
+          <li class="active"><a href="index.html">Home</a></li>
           <li><a class="drop" href="pages/projects.php">Projects</a>
             <ul>
               <li><a href="projects/WeatherApp/index.htm">Weather API</a></li>
@@ -40,10 +40,9 @@
 </div>
 <div class="wrapper row3">
   <main class="hoc container clear"> 
-    <div class="content"> 
-      <h2>Welcome to Paul Habjanetz's site</h2>
-      <p>Within my site you will find all my professional and personal expertise. By checking out my projects or my favorite food you can better get to know me as well as gauge my skill set.</p>
-      <br>
+    <div class="center btmspace-80">
+      <h2 class="heading">Greetings From Paul Habjanetz</h2>
+      <p class="nospace">Within my site you will find all my professional and personal expertise. By checking out my projects or my favorite food you can better get to know me as well as gauge my skill set. If there is anything you want to know more about drop me a line though my contact page.</p>
     </div>
     <ul class="nospace clear services">
       <li class="one_half first borderedbox">

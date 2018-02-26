@@ -43,7 +43,7 @@ File: Layout CSS
 
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
-.container{padding:80px 0;}
+.container{padding:50px 0;}
 
 /* Content */
 .container .content{}
@@ -93,7 +93,7 @@ File: Layout CSS
 
 /* Footer
 --------------------------------------------------------------------------------------------------------------- */
-#footer{padding:80px 0; border-bottom:1px solid;}
+#footer{padding:55px 0; border-bottom:1px solid;}
 
 
 /* Copyright
@@ -153,7 +153,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #mainav form select option{margin:5px; padding:0; border:none;}
 
 /* Breadcrumb */
-#breadcrumb{padding:20px 0; text-transform:uppercase;}
+#breadcrumb{padding:17px 0; text-transform:uppercase;}
 #breadcrumb ul{margin:0; padding:0; list-style:none;}
 #breadcrumb li{display:inline-block; margin:0 6px 0 0; padding:0;}
 #breadcrumb li a{display:block; position:relative; margin:0; padding:0 12px 0 0; font-size:12px;}
