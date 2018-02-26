@@ -8,7 +8,7 @@
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body id="top">
-<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/blackfloral.jpg');"> 
+<div class="bgded overlay" style="background-image:url('images/backgrounds/blackfloral.jpg');"> 
   <div class="wrapper">
     <header id="header" class="hoc clear">
       <div id="logo"> 
@@ -40,6 +40,11 @@
 </div>
 <div class="wrapper row3">
   <main class="hoc container clear"> 
+    <div class="content"> 
+      <h2>Welcome to Paul Habjanetz's site</h2>
+      <p>Within my site you will find all my professional and personal expertise. By checking out my projects or my favorite food you can better get to know me as well as gauge my skill set.</p>
+      <br>
+    </div>
     <ul class="nospace clear services">
       <li class="one_half first borderedbox">
         <div class="inspace-30">
@@ -81,7 +86,7 @@
     <div class="clear"></div>
   </main>
 </div>
-<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/blackfloral.jpg');">
+<div class="bgded overlay" style="background-image:url('images/backgrounds/blackfloral.jpg');">
   <footer id="footer" class="hoc clear center"> 
     <h3 class="heading uppercase">Habjanetz</h3>
     <ul class="faico clear">
