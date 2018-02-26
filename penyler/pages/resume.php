@@ -15,7 +15,7 @@ include ('header.html');
   <section class="hoc container clear"> 
     <div class="center btmspace-50">
       <h3 class="heading">My Career</h3>
-      <p class="nospace">Review my resume to see my skill set.</p>
+      <p class="nospace">Review my resume to see my skill set and what I have done professionally to see if there is work I can do for you.</p>
     </div>
     <div align="center" class="group btmspace-20 demo">
       <iframe width="90%" height="1150" src="https://docs.google.com/document/d/e/2PACX-1vRc-2EMVX1prS5od5htoDik7JBkYT2skZSs_ysIxQ_9Oa0IOU5-SniXhVY0WnXR9WsmQ8IE0EqdOAY-/pub?embedded=true"></iframe>

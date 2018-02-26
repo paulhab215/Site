@@ -91,6 +91,7 @@
     <ul class="faico clear">
       <li><a class="faicon-dribble" href="https://www.reddit.com/"><i class="fa fa-dribbble"></i></a></li>
       <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+      <li><a class="faicon-github" href="https://github.com/paulhab215"><i class="fa fa-github"></i></a></li>
       <li><a class="faicon-google-plus" href="https://plus.google.com/u/0/111465776023951134474"><i class="fa fa-google-plus"></i></a></li>
     </ul>
   </footer>
