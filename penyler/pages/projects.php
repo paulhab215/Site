@@ -20,24 +20,27 @@ include ('header.html');
     </div>
     <ul class="nospace group cta">
       <li class="one_third first">
-        <article><span><i class="fa fa-file"></i></span>
-          <h6 class="heading font-x1"><a href="resume.php">Weather API</a></h6>
-          <p>Created a AngularJS weather page that pulls in data from Open Weather Map.</p>
-          <footer><a href="resume.php">Details &raquo;</a></footer>
+        <article>
+          <img src="../images/projects/weather.png" alt="Habjanetz Weather App">
+          <h6 class="heading font-x1"><a href="../projects/WeatherApp/index.htm">Weather API</a></h6>
+          <p>I created a AngularJS weather app that pulls in data from Open Weather Map. You are able to type in your zip code to find the most releveant weather for you.</p>
+          <footer><a href="../projects/WeatherApp/index.htm">Details &raquo;</a></footer>
         </article>
       </li>
       <li class="one_third">
-        <article><span><i class="fa fa-arrows-v"></i></span>
-          <h6 class="heading font-x1"><a href="life-timeline.php">Social Network Template</a></h6>
-          <p> &hellip;</p>
-          <footer><a href="life-timeline.php">Details &raquo;</a></footer>
+        <article>
+          <img src="../images/projects/social.png" alt="Habjanetz Social Network">
+          <h6 class="heading font-x1"><a href="../projects/SocialNetwork/social.html">Social Network Template</a></h6>
+          <p>While I still need to partition this project to its own stack web app take a look at the template I've built for a social networking site.</p>
+          <footer><a href="../projects/SocialNetwork/social.html">Details &raquo;</a></footer>
         </article>
       </li>
       <li class="one_third">
-        <article><span><i class="fa fa-cutlery"></i></span>
-          <h6 class="heading font-x1"><a href="favorite-foods.php">JS Grid</a></h6>
-          <p> &hellip;</p>
-          <footer><a href="favorite-foods.php">Details &raquo;</a></footer>
+        <article>
+          <img src="../images/projects/jsgrid.png" alt="Habjanetz Weather App">
+          <h6 class="heading font-x1"><a href="underconstruction.php">JS Grid</a></h6>
+          <p>An open source dynamic grid display for data. Will be hooked to SQL database to dynamically pull in and format data and allow for different sorting and displays.</p>
+          <footer><a href="underconstruction.php">Details &raquo;</a></footer>
         </article>
       </li>
     </ul>
