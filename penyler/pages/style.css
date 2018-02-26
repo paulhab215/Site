@@ -1,0 +1,170 @@
+body {
+  padding-top: 50px;
+}
+
+/* add top - global setting for section tag - pad top and bottom 40 */
+section{
+	padding:40px 0 40px 0;
+} 
+
+.em-text{
+	color:#1caa98 !important;
+}
+
+/* provides bottom for all views - needed for mobile so not stacked */
+.col-md-4{
+
+	margin-top:10px;	
+	margin-bottom:20px;
+}
+
+/* add image as background - no-repeat The background-image will not be repeated - https://www.w3schools.com/cssref/pr_background-repeat.asp */
+.jumbotron{
+	background: url(../img/site_showcase_bg.jpg) no-repeat top center; 
+	color:#fff;
+	height:598px;
+	overflow:none; /* how to handle amount of content over specified width/height - https://www.w3schools.com/cssref/pr_pos_overflow.asp */
+
+}
+
+/* push down wording */
+.jumbotron h1{
+	margin-top:60px;
+}
+
+.jumbotron p{
+	margin-bottom:40px;
+}
+
+/* elements in jumbotron with class app-btn */
+.jumbotron img.app-btn{
+	width:40%;
+	margin-right:30px;  /* so pictures are not right up against each other */
+}
+
+/* resize phone image to fit banner */
+.jumbotron img.showcase-img{
+	width:75%;
+}
+
+/* resize image to remain within it's parent div - set width to 100% */
+img.demo{
+	width:100%;
+	padding:3px;
+	border: 1px solid #ccc;
+}
+
+section#feature{
+	background:#1caa98;
+	color:#fff;
+	padding:40px;
+	overflow: auto;
+}
+
+section#feature ul li{
+	font-size: 22px;
+	list-style: none; /* no style such as bullets - can override with custom - https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type:  */
+	line-height: 2.0em;
+}
+
+section#title-bar{
+	padding:0;
+	margin:0;
+	height:80px;
+	background:#1caa98;
+	color:#fff; /* color is white so we can see text  */
+}
+
+section#title-bar h1{
+	margin-bottom:20px;
+}
+
+footer{
+	background:#333;
+	color:#fff;
+	padding:30px 0 20px 0;
+}
+
+/* want the display nav bar in left  position of 6 col div  */
+footer li{
+	float:left;
+	padding:0 10px 0 10px;
+	list-style: none;
+}
+
+footer a {
+	color:#fff;
+}
+
+ /* want the display p text in right position of 6 col div  */
+footer p{
+	float:right;
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width: 1200px){
+	.jumbotron img.showcase-img{
+		width:61%;
+		margin:5px 0 0 40px;
+	}
+}
+
+ /* relevant for all screen sizes under 991 px  -  if less get rid of image*/
+@media(max-width: 991px){
+	.showcase-img{
+		display:none;
+	}
+}
+ /* less then 768 or greater then 990  */
+@media(min-width: 768px) and (max-width: 990px){
+	.jumbotron img.app-btn{
+		width:30%;
+	}
+
+	.jumbotron{
+		height:400px !important;
+		background-size:100% 100%; /* make background height width fit new dimensions */
+	}
+
+	.jumbotron h1{
+		margin-top:10px;
+	}
+}
+
+@media(max-width: 768px){
+	.jumbotron{
+		height:350px !important;
+		background-size:100% 100%;
+	}
+
+	.jumbotron h1{
+		margin-top:10px;
+	}
+}
+
+ /* size of smarth phones  */
+@media(max-width: 500px){
+	.jumbotron{
+		height:450px !important;
+		text-align: center;
+	}
+
+	/* google play and iphone buttons */
+	.jumbotron img.app-btn{
+		width:60%;
+		margin:0 auto 30px auto; /* t/r/b/l - auto centers the items */
+		display:block;
+	}
+
+	section#feature ul li{
+		font-size: 19px !important;
+	}
+
+	footer p{
+		float:none;
+		text-align: center;
+		padding-top:20px;
+	}
+
+}

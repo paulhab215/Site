@@ -22,13 +22,13 @@
             <ul>
               <li><a href="projects/WeatherApp/index.htm">Weather API</a></li>
               <li><a href="projects/SocialNetwork/social.html">Social Network Template</a></li>
-              <li><a href="pages/sidebar-left.html">JS Grid</a></li>
+              <li><a href="pages/underconstruction.php">JS Grid</a></li>
             </ul>
           </li>
           <li><a class="drop" href="pages/aboutme.php">About Me</a>
             <ul>
               <li><a href="pages/resume.php">Resume</a></li>
-              <li><a href="pages/sills.php">Skills</a></li>
+              <li><a href="pages/underconstruction.php">Skills</a></li>
               <li><a href="pages/favorite-foods.php">Favorite Foods</a></li>
             </ul>
           </li>

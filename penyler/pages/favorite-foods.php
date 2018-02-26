@@ -23,31 +23,31 @@ include ('header.html');
         <table>
           <thead>
             <tr>
-              <th>Name</th>
+              <th>Restaurant Name</th>
               <th>Type</th>
               <th>Paul's Rank</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><a href="#">Value 1</a></td>
-              <td>Value 2</td>
-              <td>Value 3</td>
+              <td><a href="https://www.fresaschicken.com/">Fresas</td>
+              <td>Mexican</td>
+              <td>2</td>
             </tr>
             <tr>
-              <td><a href="#">Value 5</td>
-              <td>Value 6</td>
-              <td>Value 7</td>
+              <td><a href="http://www.noblesandwiches.com/">Noble Sandwich Co.</td>
+              <td>Sandwiches</a></td>
+              <td>1</td>
             </tr>
             <tr>
-              <td><a href="#">Value 9</td>
-              <td>Value 10</td>
-              <td>Value 11</td>
+              <td><a href="http://www.one-taco.com/">One Taco</a></td>
+              <td>Mexican</td>
+              <td>3</td>
             </tr>
             <tr>
-              <td><a href="#">Value 13</td>
-              <td>Value 14</a></td>
-              <td>Value 15</td>
+              <td><a href="http://saigon7th.com/">Saigon Le Vendeur</td>
+              <td>Veitnamese</td>
+              <td>4</td>
             </tr>
           </tbody>
         </table>

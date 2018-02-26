@@ -15,8 +15,8 @@ include ('header.html');
 <div class="wrapper row3">
   <section class="hoc container clear"> 
     <div class="center btmspace-80">
-      <h3 class="heading">Get to know me reader</h3>
-      <p class="nospace">Take some time and check out what I have been up to throughout my life.</p>
+      <h2 class="heading">Get to know Paul Habjanetz</h2>
+      <p class="nospace">Take some time and check my professional qualifications as well as some of my personal food preferences here in the Austin location.</p>
     </div>
     <ul class="nospace group cta">
       <li class="one_third first">
@@ -28,15 +28,15 @@ include ('header.html');
       </li>
       <li class="one_third">
         <article><span><i class="fa fa-arrows-v"></i></span>
-          <h6 class="heading font-x1"><a href="life-timeline.php">Timeline</a></h6>
-          <p>Get a personal look at my life. From my humble beginnings to my splendid life of now - beneath lies all &hellip;</p>
-          <footer><a href="life-timeline.php">Details &raquo;</a></footer>
+          <h6 class="heading font-x1"><a href="life-timeline.php">Skills</a></h6>
+          <p>Get a more in depth look at my skills, specifically seeing what I consider myself proficient at.</p>
+          <footer><a href="underconstruction.php">Details &raquo;</a></footer>
         </article>
       </li>
       <li class="one_third">
         <article><span><i class="fa fa-cutlery"></i></span>
           <h6 class="heading font-x1"><a href="favorite-foods.php">Favorite Foods</a></h6>
-          <p>Nothing speaks getting to know someone like knowing their favorite foods. Check out some of my top spots in Austin &hellip;</p>
+          <p>Nothing speaks getting to know someone like knowing their favorite foods. Check out some of my top spots in Austin.</p>
           <footer><a href="favorite-foods.php">Details &raquo;</a></footer>
         </article>
       </li>

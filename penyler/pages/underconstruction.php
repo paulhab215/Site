@@ -8,8 +8,8 @@ include ('header.html');
 <div class="wrapper row2">
   <div id="breadcrumb" class="hoc clear"> 
     <ul>
-      <li><a href="projects.php">Projects</a></li>
-      <li><a href="underconstruction.php">JS Grid</a></li>
+      <li><a href="projects.php">Projects/About Me</a></li>
+      <li><a href="underconstruction.php">Construction</a></li>
     </ul>
   </div>
 </div>
