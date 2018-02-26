@@ -1,5 +1,6 @@
 <?php
 $page_name = 'Projects';
+$page_meta = 'Look at Paul Habjanetz\'s resume. See my career and what I have accomplished. Within my resume lay all the detail regarding my professional work.';
 include ('header.html');
 ?>
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -21,7 +22,7 @@ include ('header.html');
       <li class="one_third first">
         <article><span><i class="fa fa-file"></i></span>
           <h6 class="heading font-x1"><a href="resume.php">Weather API</a></h6>
-          <p>Create a AngularJS weather page that pulls in data from Open Weather Map.</p>
+          <p>Created a AngularJS weather page that pulls in data from Open Weather Map.</p>
           <footer><a href="resume.php">Details &raquo;</a></footer>
         </article>
       </li>
@@ -34,7 +35,7 @@ include ('header.html');
       </li>
       <li class="one_third">
         <article><span><i class="fa fa-cutlery"></i></span>
-          <h6 class="heading font-x1"><a href="favorite-foods.php">Custom Login Page</a></h6>
+          <h6 class="heading font-x1"><a href="favorite-foods.php">JS Grid</a></h6>
           <p> &hellip;</p>
           <footer><a href="favorite-foods.php">Details &raquo;</a></footer>
         </article>

@@ -1,5 +1,6 @@
 <?php
 $page_name = 'Contact Information';
+$page_meta = 'Need to get in contact with Paul Habjanetz, contact him through automated system or in person. Contact information such as email and phone located here.';
 include ('header.html');
 ?>
 <div class="wrapper row2">

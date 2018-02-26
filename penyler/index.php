@@ -2,17 +2,18 @@
 <html>
 <head>
 <title>Paul Habjanetz</title>  
-<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="Welcome to Paul Habjanetz's website. Learn him about his career, tastes, projects, and skills. Beneath lies everything you need to contact him and more.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body id="top">
-<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/mountain.jpg');"> 
+<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/blackfloral.jpg');"> 
   <div class="wrapper">
     <header id="header" class="hoc clear">
       <div id="logo"> 
         <h1><a href="index.html">Paul Habjanetz</a></h1>
-        <p>Through knowledge - all things make sense</p>
+        <p>Through knowledge all things make sense</p>
       </div>
       <nav id="mainav" class="clear"> 
         <ul class="clear">
@@ -21,14 +22,13 @@
             <ul>
               <li><a href="projects/WeatherApp/index.htm">Weather API</a></li>
               <li><a href="projects/SocialNetwork/social.html">Social Network Template</a></li>
-<!--               <li><a href="pages/sidebar-left.html">JS Grid</a></li>
- -->              <li><a href="projects/LoginPage/login.php">Custom Login Page</a></li>              
+              <li><a href="pages/sidebar-left.html">JS Grid</a></li>
             </ul>
           </li>
           <li><a class="drop" href="pages/aboutme.php">About Me</a>
             <ul>
               <li><a href="pages/resume.php">Resume</a></li>
-              <li><a href="pages/life-timeline.php">TimeLine</a></li>
+              <li><a href="pages/sills.php">Skills</a></li>
               <li><a href="pages/favorite-foods.php">Favorite Foods</a></li>
             </ul>
           </li>
@@ -36,10 +36,6 @@
         </ul>
       </nav>
     </header>
-  </div>
-  <div id="pageintro" class="hoc clear"> 
-    <article><em>Welcome to my website. Here you can learn more about my work and about me. Just remember the 3 e's explore, enjoy, experience.</em>
-    </article>
   </div>
 </div>
 <div class="wrapper row3">
@@ -61,26 +57,6 @@
           <figcaption>Code Wars</figcaption>
         </figure>
         </a></li>
-      <li class="one_quarter first"><a href="https://davidwalsh.name/">
-        <figure><img src="images/blogs/davidwalsh.png" alt="">
-          <figcaption>David Walsh</figcaption>
-        </figure>
-        </a></li>
-      <li class="one_quarter"><a href="https://www.udemy.com/">
-        <figure><img src="images/blogs/Udemy.png" alt="">
-          <figcaption>Udemy</figcaption>
-        </figure>
-        </a></li>
-      <li class="one_quarter"><a href="https://css-tricks.com/">
-        <figure><img src="images/blogs/css.png" alt="">
-          <figcaption>CSS-Tricks</figcaption>
-        </figure>
-        </a></li>
-      <li class="one_quarter"><a href="https://tympanus.net/codrops/">
-        <figure><img src="images/blogs/codrops.png" alt="">
-          <figcaption>codrops</figcaption>
-        </figure>
-        </a></li>
       <li class="one_quarter first"><a href="https://moz.com/">
         <figure><img src="images/blogs/moz.png" alt="">
           <figcaption>Moz</figcaption>
@@ -91,14 +67,14 @@
           <figcaption>Slashdot</figcaption>
         </figure>
         </a></li>
-      <li class="one_quarter"><a href="https://gizmodo.com/">
-        <figure><img src="images/blogs/gizmodo.png" alt="">
-          <figcaption>Gizmodo</figcaption>
+      <li class="one_quarter"><a href="https://www.udemy.com/">
+        <figure><img src="images/blogs/Udemy.png" alt="">
+          <figcaption>Udemy</figcaption>
         </figure>
         </a></li>
-      <li class="one_quarter"><a href="https://tympanus.net/codrops/">
-        <figure><img src="images/blogs/codrops.png" alt="">
-          <figcaption>codrops</figcaption>
+      <li class="one_quarter"><a href="https://css-tricks.com/">
+        <figure><img src="images/blogs/css.png" alt="">
+          <figcaption>CSS-Tricks</figcaption>
         </figure>
         </a></li>
     </ul>

@@ -1,5 +1,6 @@
 <?php
 $page_name = 'Favorite Foods';
+$page_meta = 'Check out Paul Habjanetz\'s favorite food in Austin Texas. Take it from a local who prioritizes good eats and has lived in Austin for a number of years.';
 include ('header.html');
 ?>
 <div class="wrapper row2">

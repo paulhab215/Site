@@ -1,5 +1,6 @@
 <?php
 $page_name = 'Resume';
+$page_meta = 'Admire the projects Paul Habjanetz has worked on. Projects ranging from a Weather API to a social networking site, or a JSGrid plug in.';
 include ('header.html');
 ?>
 <div class="wrapper row2">
