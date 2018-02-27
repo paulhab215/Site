@@ -1,12 +1,12 @@
 <?php
 $page_name = 'Projects';
-$page_meta = 'Look at Paul Habjanetz\'s resume. See my career and what I have accomplished. Within my resume lay all the detail regarding my professional work.';
+$page_meta = 'Look at the open source chart framework that Paul Habjanetz utilizes. Everything from pie, line, bar charts are included in his examples.';
 include ('header.html');
 ?>
 <script src="https://unpkg.com/frappe-charts@0.0.8/dist/frappe-charts.min.iife.js"></script>
 <style>
 .container {
-  padding:10px!important;
+  padding:18px!important;
 }
 </style>
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
