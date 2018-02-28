@@ -6,7 +6,28 @@ include ('header.html');
 <script src="https://unpkg.com/frappe-charts@0.0.8/dist/frappe-charts.min.iife.js"></script>
 <style>
 .container {
-  padding:18px!important;
+  padding:15px!important;
+}
+
+#chart,#charttwo{
+  width:800px;
+} 
+
+@media screen and (max-width:900px){
+  #chart,#charttwo{
+    width:600px;
+  } 
+}
+
+@media screen and (max-width:750px){
+  #chart,#charttwo{
+    width:900px;
+  } 
+}
+@media screen and (max-width:650px){
+  #chart,#charttwo{
+    width:330px;
+  } 
 }
 </style>
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -27,19 +48,18 @@ include ('header.html');
     </div>
   </main>
   <main class="hoc container clear"> 
-    <div id="chart" style="width:800px;margin:0 auto!important;" class="center btmspace-80">
+    <div id="chart" style="margin:0 auto!important;" class="center btmspace-80">
     </div>
   </main>
   <main class="hoc container clear"> 
-    <div id="charttwo" style="width:800px;margin:0 auto!important;" class="center btmspace-80">
+    <div id="charttwo" style="margin:0 auto!important;" class="center btmspace-80">
     </div>
   </main>  
 </div>
 
 <script>
   let data = {
-    labels: ["Mexican", "Italian", "Mediteranean", "American Comfort",
-      "Sandwiches", "Asian"],
+    labels: ["Mexican", "Italian", "American", "Sandwiches", "Asian"],
 
     datasets: [
       {
@@ -54,7 +74,6 @@ include ('header.html');
     title: "Count of Favorite Restaurants",
     data: data,
     type: 'pie',
-    height: 250,
     height: 325,
 
     colors: ['#7cd6fd', 'violet', 'blue'],
@@ -64,17 +83,16 @@ include ('header.html');
   });
 
   let data1 = {
-    labels: ["One Taco", "O'daku", "Tinos Greek Cafe", "Fresas",
-      "Counter Cafe", "Saigon Le Vendeur"],
+    labels: ["One Taco", "O'daku", "Fresas", "Counter Cafe", "Saigon Le Vendeur"],
 
     datasets: [
       {
         title: "Ranking",
-        values: [5, 6, 1, 3, 4, 2]
+        values: [4, 5, 2, 3, 1]
       },
       {
         title: "Occupied (most busy)",
-        values: [3, 2, 1, 5, 6, 4]
+        values: [2, 1, 4, 5, 3]
       },      
     ]
   };
@@ -84,8 +102,7 @@ include ('header.html');
     title: "Ranked Restaurants",
     data: data1,
     type: 'line',
-    height: 350,
-    height: 400,
+    height: 250,
 
     colors: ['#7cd6fd', 'green', 'green'],
     format_tooltip_x: d => (d + '').toUpperCase(),
