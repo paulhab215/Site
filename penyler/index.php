@@ -22,7 +22,7 @@
             <ul>
               <li><a href="projects/WeatherApp/index.htm">Weather API</a></li>
               <li><a href="projects/SocialNetwork/social.html">Social Network Template</a></li>
-              <li><a href="pages/underconstruction.php">JS Grid</a></li>
+              <li><a href="pages/jsgrid.php">JS Grid</a></li>
               <li><a href="pages/frappe.php">Frappe Charts</a></li>
 
             </ul>

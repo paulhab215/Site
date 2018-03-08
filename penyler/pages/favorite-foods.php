@@ -3,6 +3,16 @@ $page_name = 'Favorite Foods';
 $page_meta = 'Check out Paul Habjanetz\'s favorite food in Austin Texas. Take it from a local who prioritizes good eats and has lived in Austin for a number of years.';
 include ('header.html');
 ?>
+<style>
+table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top;}
+table{width:100%; margin-bottom:15px;}
+
+table, th{table-layout:auto;}
+th, td{padding:5px 8px;}
+td{border-width:0 1px;}
+
+</style>
+
 <div class="wrapper row2">
   <div id="breadcrumb" class="hoc clear"> 
     <ul>
