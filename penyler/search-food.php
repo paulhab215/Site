@@ -11,15 +11,14 @@
     return $xmlStr;
   }
 
-
   // Opens a connection to a MySQL server
-  $connection=mysql_connect ('localhost', 'root', 'root');
+  $connection=mysql_connect ('localhost', 'root', 'mandarin02');
   if (!$connection) {
     die('Not connected : ' . mysql_error());
   }
 
   // Set the active MySQL database
-  $db_selected = mysql_select_db('sitename', $connection);
+  $db_selected = mysql_select_db('paulsite', $connection);
   if (!$db_selected) {
     die ('Can\'t use db : ' . mysql_error());
   }

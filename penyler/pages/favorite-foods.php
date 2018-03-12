@@ -28,40 +28,6 @@ td{border-width:0 1px;}
       <p>Below are my top choices of food places in Austin - you can click on the name of each place to see where they are located within the city and also find more information in their infowindow. I have only been here for a year so am not a veteran in Austin food but with more time I will cover more territory.</p>
       <div class="map_canvas" id="map" style="width: 900px; height: 500px; margin:0 auto;"></div>
       <br>
-      <h1>Restaurants</h1>
-      <div class="scrollable">
-        <table>
-          <thead>
-            <tr>
-              <th>Restaurant Name</th>
-              <th>Type</th>
-              <th>Paul's Rank</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="https://www.fresaschicken.com/">Fresas</td>
-              <td>Mexican</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td><a href="http://www.noblesandwiches.com/">Noble Sandwich Co.</td>
-              <td>Sandwiches</a></td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td><a href="http://www.one-taco.com/">One Taco</a></td>
-              <td>Mexican</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td><a href="http://saigon7th.com/">Saigon Le Vendeur</td>
-              <td>Veitnamese</td>
-              <td>4</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
     </div>
     <div class="clear"></div>
   </main>
