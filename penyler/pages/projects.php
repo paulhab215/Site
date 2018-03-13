@@ -14,7 +14,7 @@ include ('header.html');
 </div>
 <div class="wrapper row3">
   <main class="hoc container clear"> 
-    <div class="center btmspace-50">
+    <div class="center btmspace-20" style="padding-bottom: 25px!important">
       <h2 class="heading">Check out some of my Projects</h2>
       <p class="nospace">Evaluate my work and see if it is a right fit for you. Below are some simple exercises I did in order to showcase my project development skills. As seen I can work with API's, write to and from a stack, and handle large amounts of data by displaying it in differnt forms. The logos are simple logos that I used for my projects - click on each to learn more.</p>
     </div>
