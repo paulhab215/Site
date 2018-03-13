@@ -42,7 +42,7 @@ include ('header.html');
 </div>
 <div class="wrapper row3">
   <main class="hoc container clear"> 
-    <div class="center">
+    <div class="center btmspace-20">
       <h2 class="heading">Utilizing Open Source</h2>
       <p>Below are a number of different charts from the open source framework Frappe. With its easy to understand documentation and simple array data declaration the framework is a great fit for any project. I pull this test data from the restaurants on my <a href="favorite-foods.php">favorite foods page</a></p>
     </div>
