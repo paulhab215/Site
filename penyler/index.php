@@ -12,7 +12,7 @@
   <div class="wrapper">
     <header id="header" class="hoc clear">
       <div id="logo"> 
-        <h1><a href="index.html">Paul Habjanetz</a></h1>
+        <h1><a href="index.php">Paul Habjanetz</a></h1>
         <p>Through knowledge all things make sense</p>
       </div>
       <nav id="mainav" class="clear"> 
@@ -30,7 +30,6 @@
           <li><a class="drop" href="pages/aboutme.php">About Me</a>
             <ul>
               <li><a href="pages/resume.php">Resume</a></li>
-              <li><a href="pages/underconstruction.php">Skills</a></li>
               <li><a href="pages/favorite-foods.php">Favorite Foods</a></li>
             </ul>
           </li>
