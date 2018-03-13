@@ -19,7 +19,7 @@ include ('header.html');
       <p class="nospace">Evaluate my work and see if it is a right fit for you. Below are some simple exercises I did in order to showcase my project development skills. Ass seen I can work with API's, write to and from a stack as seen with Social Network site, and manage large amounts of data.</p>
     </div>
     <ul class="nospace group cta">
-      <li class="one_third first">
+      <li class="one_half first">
         <article>
           <img src="../images/projects/weather.png" alt="Habjanetz Weather App">
           <h6 class="heading font-x1"><a href="../projects/WeatherApp/index.htm">Weather API</a></h6>
@@ -27,7 +27,7 @@ include ('header.html');
           <footer><a href="../projects/WeatherApp/index.htm">Details &raquo;</a></footer>
         </article>
       </li>
-      <li class="one_third">
+      <li class="one_half">
         <article>
           <img src="../images/projects/social.png" alt="Habjanetz Social Network">
           <h6 class="heading font-x1"><a href="../projects/SocialNetwork/social.html">Social Network Template</a></h6>
@@ -35,12 +35,20 @@ include ('header.html');
           <footer><a href="../projects/SocialNetwork/social.html">Details &raquo;</a></footer>
         </article>
       </li>
-      <li class="one_third">
+      <li class="one_half first">
+        <article>
+          <img src="../images/projects/frappe.png" alt="Habjanetz Weather App">
+          <h6 class="heading font-x1"><a href="frappe.php">Frappe</a></h6>
+          <p>An open source chart package that can handle everything though simple array passing. Can be set dynamically went hooked up to a database.</p>
+          <footer><a href="frappe.php">Details &raquo;</a></footer>
+        </article>
+      </li>
+      <li class="one_half">
         <article>
           <img src="../images/projects/jsgrid.png" alt="Habjanetz Weather App">
-          <h6 class="heading font-x1"><a href="underconstruction.php">JS Grid</a></h6>
+          <h6 class="heading font-x1"><a href="jsgrid.php">JS Grid</a></h6>
           <p>An open source dynamic grid display for data. Will be hooked to SQL database to dynamically pull in and format data and allow for different sorting and displays.</p>
-          <footer><a href="underconstruction.php">Details &raquo;</a></footer>
+          <footer><a href="jsgrid.php">Details &raquo;</a></footer>
         </article>
       </li>
     </ul>
