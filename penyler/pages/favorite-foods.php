@@ -67,7 +67,6 @@ td{border-width:0 1px;}
               var bio     = markers[i].getAttribute("bio");
               var yelp    = markers[i].getAttribute("yelp");
               var foodpic = markers[i].getAttribute("foodpic");
-
               codeAddress(name, address, bio, yelp, foodpic);
             }
         }
@@ -82,6 +81,12 @@ td{border-width:0 1px;}
           html += "<h1 class='mapName'>" + name + "</h1><p> (" + address + ")</p></div><div id='mapBody'><img src='../images/food/food" + foodpic + ".jpg' class='foodDetails'><p>" + bio + "<br/><br/>Check it on out on <a href = "+ yelplink +">yelp</a>!</p></div>";
           map.setCenter(results[0].geometry.location);
           createMarker(results[0].geometry.location,html);              
+        } else if (status === google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {    
+            setTimeout(function() {
+                codeAddress(name, searchAddr, bio, yelplink, foodpic);
+            }, 200);
+        } else {
+            alert("Geocode was not successful for the following reason:" + status);
         }
       });
     }
