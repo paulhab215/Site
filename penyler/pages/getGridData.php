@@ -1,5 +1,7 @@
- <?php 
-  require ('mysqli_connect.php');
+ <?php
+ error_log("1!", 3, "../errors.txt");
+ echo ''
+  require ('../mysqli_connect.php');
 
   function parseToXML($htmlStr)
   {
@@ -33,7 +35,8 @@
   header("Content-type: text/xml");
 
   // Start XML file, echo parent node
-  echo '<markers>';
+
+    echo 'var clients = [';
 
   // Iterate through the rows, printing XML nodes for each
   while ($row = @mysql_fetch_assoc($result)){
@@ -41,15 +44,10 @@
     $state = substr($state, strpos($state, "*") + 1);
     $addy = parseToXML($row['street'])." ".parseToXML($row['city'])." ".parseToXML($state)." ".parseToXML($row['zip']);
     // Add to XML document node
-    echo '<marker ';
-    echo 'name="' . parseToXML($row['name']) . '" ';
-    echo 'address="'.$addy.'" ';
-    echo 'bio="' . parseToXML($row['bio']) . '" ';
-    echo 'yelp="' . parseToXML($row['yelp_link']) . '" ';
-    echo 'foodpic="' . parseToXML($row['food_id']) . '" ';
-    echo '/>';
-  }
 
-  // End XML file
-  echo '</markers>'
+    echo '{ "Name": "'.parseToXML($row['name']).'", "Type": 1, "Address": "'.$addy.'", "Ranking": "'.parseToXML($row['rank']).'" },';
+  }
+  echo  '];';
+
+ // End XML file
 ?>
