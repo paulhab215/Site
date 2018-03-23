@@ -3,8 +3,9 @@ $page_name = 'Projects';
 $page_meta = 'Look at the open source chart framework that Paul Habjanetz utilizes. Everything from pie, line, bar charts are included in his examples.';
 include ('header.html');
 ?>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
 <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
 </div>
 <div class="wrapper row2">
@@ -25,52 +26,12 @@ include ('header.html');
   <main class="hoc container clear"> 
     <div id="jsGrid"></div>
   </main>  
-  <script type="text/javascript">
-  initMap();
-    function initMap(){
-      downloadUrl('getGridData.php', function(data) {
-        if(data.status == 200)//response okie
-        {
-            var xmlResponse = data.responseXML;
-            var textResponse = data.responseText;
-alert(textResponse);
-            str = textResponse.substring(textResponse.indexOf("<markers>") + 0);
+<script type="text/javascript">
+  
 
-            var parser = new DOMParser();
-            var xmlDoc = parser.parseFromString(str, "application/xml");
+   var clients;
+var clients = [{ "Name": "One Taco", "Type": 1, "Address": "12200 Research Blvd Austin Texas 78759", "Ranking": 1 },{ "Name": "Fresa's Chicken Al Carbon", "Type": 1, "Address": "915 N Lamar Blvd Austin Texas 78703", "Ranking": 9 },{ "Name": "Saigon Le Vendeur", "Type": 4, "Address": "2404 E 7th St Austin Texas 78702", "Ranking": 7 },{ "Name": "O'Daku", "Type": 4, "Address": "2501 W Parmer Ln Austin Texas 78727", "Ranking": 5 },{ "Name": "Noble Sandwich Company", "Type": 5, "Address": "4805 Burnet Rd Austin Texas 78756", "Ranking": 11 },{ "Name": "Pho Please", "Type": 4, "Address": "1920 E Riverside Dr Austin Texas 78741", "Ranking": 13 },{ "Name": "Ramen Tatsu-Ya", "Type": 4, "Address": "1234 South Lamar Austin Texas 78704", "Ranking": 4 },{ "Name": "Cabo Bobs", "Type": 1, "Address": "2828 Rio Grande St Austin Texas 78705", "Ranking": 14 },{ "Name": "Velvet Taco", "Type": 1, "Address": "11501 Rock Rose Ave Austin Texas 78758", "Ranking": 6 },{ "Name": "LA Barbecue", "Type": 3, "Address": "2027 E Cesar Chavez St Austin Texas 78704", "Ranking": 2 },{ "Name": "Desano", "Type": 3, "Address": "8000 Burnet Rd Austin Texas 78757", "Ranking": 12 },{ "Name": "East Side Kings", "Type": 4, "Address": "2310 S Lamar Blvd Austin Texas 78704", "Ranking": 10 },{ "Name": "Lucky's Puccias", "Type": 5, "Address": "1611 W 5th St Austin Texas 78703", "Ranking": 15 },{ "Name": "Fuego Tortilla Grill", "Type": 1, "Address": "913 N Interstate 35 Frontage Rd San Marcos Texas 78666", "Ranking": 8 },{ "Name": "Dos Batos", "Type": 1, "Address": "2525 W Anderson Ln Austin Texas 78757", "Ranking": 3 },];
 
-            var markers = xmlDoc.documentElement.getElementsByTagName('marker');
-            for (var i = 0; i < markers.length; i++) {
-              var name    = markers[i].getAttribute("name");
-              var address = markers[i].getAttribute("address");
-              var type     = markers[i].getAttribute("type");
-              var rank    = markers[i].getAttribute("rank");
-          var html = "<div id='mapContent'>";
-          html += "<h1 class='mapName'>" + name + "</h1><p> (" + address + ")</p></div><div id='mapBody'><img src='../images/food/food" + foodpic + ".jpg' class='foodDetails'><p>" + bio + "<br/><br/>Check it on out on <a href = "+ yelplink +">yelp</a>!</p></div>";
-
-
-            }
-        }
-      });
-    }
-    function downloadUrl(url, callback) {
-      var request = window.ActiveXObject ?
-          new ActiveXObject('Microsoft.XMLHTTP') :
-          new XMLHttpRequest;
-      request.onreadystatechange = function() {
-        if (request.readyState == 4) {
-          request.onreadystatechange = doNothing;
-          callback(request, request.status);
-        }
-      };
-      request.open('GET', url, true);
-      request.send(null);
-    }
-
-    function doNothing() {}
-</script>
-<script DEFER>
-// var clients = [{ "Name": "One Taco", "Type": 1, "Address": "12200 Research Blvd Austin exas 78759", "Ranking": "1" },{ "Name": "Fresa&amp;#39;s Chicken Al Carbon", "Type": 1, "Address": "915 N Lamar Blvd Austin exas 78703", "Ranking": "9" },{ "Name": "Saigon Le Vendeur", "Type": 1, "Address": "2404 E 7th St Austin exas 78702", "Ranking": "7" },{ "Name": "O&amp;#39;Daku", "Type": 1, "Address": "2501 W Parmer Ln Austin exas 78727", "Ranking": "5" },{ "Name": "Noble Sandwich Company", "Type": 1, "Address": "4805 Burnet Rd Austin exas 78756", "Ranking": "11" },{ "Name": "Pho Please", "Type": 1, "Address": "1920 E Riverside Dr Austin exas 78741", "Ranking": "13" },{ "Name": "Ramen Tatsu-Ya", "Type": 1, "Address": "1234 South Lamar Austin exas 78704", "Ranking": "4" },{ "Name": "Cabo Bobs", "Type": 1, "Address": "2828 Rio Grande St Austin exas 78705", "Ranking": "14" },{ "Name": "Velvet Taco", "Type": 1, "Address": "11501 Rock Rose Ave Austin exas 78758", "Ranking": "6" },{ "Name": "LA Barbecue", "Type": 1, "Address": "2027 E Cesar Chavez St Austin exas 78704", "Ranking": "2" },{ "Name": "Desano", "Type": 1, "Address": "8000 Burnet Rd Austin exas 78757", "Ranking": "12" },{ "Name": "East Side Kings", "Type": 1, "Address": "2310 S Lamar Blvd Austin exas 78704", "Ranking": "10" },{ "Name": "Lucky&amp;#39;s Puccias", "Type": 1, "Address": "1611 W 5th St Austin exas 78703", "Ranking": "15" },{ "Name": "Fuego Tortilla Grill", "Type": 1, "Address": "913 N Interstate 35 Frontage Rd San Marcos exas 78666", "Ranking": "8" },{ "Name": "Dos Batos", "Type": 1, "Address": "2525 W Anderson Ln Austin exas 78757", "Ranking": "3" },];
     var resttypes = [
         { Name: "", Id: 0 },
         { Name: "Mexican", Id: 1 },
@@ -79,10 +40,10 @@ alert(textResponse);
         { Name: "Asian", Id: 4 },
         { Name: "Sandwiches", Id: 5 },
     ];
- $(document).ready(function () {
+ 
     $("#jsGrid").jsGrid({
         width: "100%",
-        height: "300px",
+        height: "500px",
  
         inserting: true,
         editing: true,
@@ -95,11 +56,31 @@ alert(textResponse);
             { name: "Name", type: "text", width: 100, validate: "required" },
             { name: "Address", type: "text", width: 200 },
             { name: "Type", type: "select", items: resttypes, valueField: "Id", textField: "Name" },
-            { name: "Ranking", type: "text", width: 50 },
-            { type: "control" }
+            { name: "Ranking", type: "text", width: 50 }
         ]
     });
-  });
+
+</script>
+<script DEFER>
+ 
+
+var xmlhttp = new XMLHttpRequest();
+
+
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      clients = JSON.parse(this.responseText);
+    }
+};
+xmlhttp.open("GET", "getGridData.php", true);
+xmlhttp.send();
+function one(){
+  alert("clients");
+  $("#jsGrid").jsGrid("insertItem", { Name: "John"}).done(function() {
+    alert("insertion completed");
+});
+}
+
 </script>
 
 <?php
