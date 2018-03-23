@@ -3,6 +3,51 @@ $page_name = 'Contact Information';
 $page_meta = 'Need to get in contact with Paul Habjanetz, contact him through automated system or in person. Contact information such as email and phone located here.';
 include ('header.html');
 ?>
+<?php 
+//Form submission - if so which type register/login
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    require ('includes/comment_funcs.php');
+    require ('../mysqli_connect.php');
+
+    // Check the login:
+    list ($check, $data) = register_errors($dbc, $_POST['name'], $_POST['email'],$_POST['comment']);
+
+    if ($check) { 
+      // Set the session data:
+      session_start();
+      $_SESSION['user_id'] = $data['user_name'];
+      
+      // Store the HTTP_USER_AGENT:
+      $_SESSION['agent'] = md5($_SERVER['HTTP_USER_AGENT']);
+
+      // Redirect:
+      redirect_user('loggedin.php');
+        
+    } else { // Unsuccessful!
+
+      // Assign $data to $errors for login_page.inc.php:
+      $errors = $data;
+
+      // Print any error messages, if they exist:
+      if (isset($errors) && !empty($errors)) {
+        $Errorlisting = '<h2>Error!</h2><br/><p class=\"error\">';
+        foreach ($errors as $msg) {
+          $Errorlisting .=  " - ";
+          $Errorlisting .=  "$msg";
+          $Errorlisting .= "<br/>";
+        }
+        $Errorlisting .= '<br/><br/>';
+        $SubmitType = "register";
+      }
+
+    }
+    mysqli_close($dbc); // Close the database connection.
+  }
+}
+?>
+
+
 <div class="wrapper row2">
   <div id="breadcrumb" class="hoc clear"> 
     <ul>
@@ -32,14 +77,14 @@ include ('header.html');
       <div id="comments">
         <h1>Submit through my system</h1>
         <p>I have always highlighted my listening skills as a favorite among my senses. Drop me a line through this form based contact system and I will return your queries in a timely manner.</p>
-        <form action="#" method="post">
+        <form class="contact" method="post">
           <div class="one_third first">
             <label for="name">Name <span>*</span></label>
-            <input type="text" name="name" id="name" value="" size="22" required>
+            <input type="text" name="name" id="name" value="<?php if (isset($_POST['name'])) echo $_POST['name']; ?>" size="22" required>
           </div>
           <div class="one_third">
-            <label for="email">Mail <span>*</span></label>
-            <input type="email" name="email" id="email" value="" size="22" required>
+            <label for="email">E-mail <span>*</span></label>
+            <input type="email" name="email" id="email" value="<?php if (isset($_POST['email'])) echo $_POST['email']; ?>" size="22" required>
           </div>
           <div class="one_third">
             <label for="url">Website</label>
@@ -47,7 +92,7 @@ include ('header.html');
           </div>
           <div class="block clear">
             <label for="comment">Your Comment</label>
-            <textarea name="comment" id="comment" cols="25" rows="10"></textarea>
+            <textarea name="comment" id="comment" value="<?php if (isset($_POST['comment'])) echo $_POST['comment']; ?>" cols="25" rows="10"></textarea>
           </div>
           <div>
             <input type="submit" name="submit" value="Submit Form">
