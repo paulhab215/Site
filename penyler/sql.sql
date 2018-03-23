@@ -35,3 +35,13 @@ INSERT INTO food (name, street, secondary_street, city, state_abbrv, state, zip,
 ('Lucky\'s Puccias', '1611 W 5th St', '#175', 'Austin', 'TX', 'Texas', '78703', 'Italian wood fired sandwiches that are always fresh out of the oven. With a vast menu and all being good you can\'t go wrong, but if you don\'t want to take a chance get the Hot Pastrami, Lucky\'s or Contadina.','https://www.yelp.com/biz/luckys-puccias-and-pizzeria-austin', 'Sandwiches', '15'),
 ('Fuego Tortilla Grill', '913 N Interstate 35 Frontage Rd', '', 'San Marcos', 'TX', 'Texas', '78666', 'A college classic it is worth making it on the list - also helps sorting. But if you ever stop in get the Fuego Steak taco.','https://www.yelp.com/biz/fuego-tortilla-grill-san-marcos-3', 'Mexican', '8'),
 ('Dos Batos', '2525 W Anderson Ln', '#175', 'Austin', 'TX', 'Texas', '78757', 'Wood fired tacos with a great tasting salsa on the side make this place great. Make sure you try the chicken taco it wins by a landside.','https://www.yelp.com/biz/dos-batos-woodfired-tacos-austin', 'Mexican', '3');
+
+
+CREATE TABLE contact (
+contact_id MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT,
+name VARCHAR(60) NOT NULL,
+email VARCHAR(60) NOT NULL,
+website VARCHAR(50),
+city VARCHAR(1000) NOT NULL,
+PRIMARY KEY (contact_id)
+);
