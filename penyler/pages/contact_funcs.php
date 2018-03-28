@@ -1,4 +1,7 @@
 <?php
+
+require ('../mysqli_connect.php');
+
 function redirect_user ($page = 'index.php') {
 
   // Start defining the URL...
@@ -18,19 +21,6 @@ function redirect_user ($page = 'index.php') {
 }
 
 function register_errors($dbc, $name = '', $email = '', $comment = '', $website = "") {
-
-  // Opens a connection to a MySQL server
-  $connection=mysql_connect('localhost', 'root', 'Pandaria02.');
-  if (!$connection) {
-    die('Not connected : ' . mysql_error());
-  }
-
-  // Set the active MySQL database
-  $db_selected = mysql_select_db('sitename', $connection);
-  if (!$db_selected) {
-    die ('Can\'t use db : ' . mysql_error());
-  }
-
 
   $query = "INSERT INTO contact (name, email, website, comment) VALUES ('$name', '$email', '$website', '$comment')";
 

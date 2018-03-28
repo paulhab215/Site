@@ -1,5 +1,4 @@
  <?php 
-  require ('mysqli_connect.php');
 
   function parseToXML($htmlStr)
   {
@@ -10,18 +9,7 @@
     $xmlStr=str_replace("&",'&amp;',$xmlStr);
     return $xmlStr;
   }
-
-  // Opens a connection to a MySQL server
-  $connection=mysql_connect ('localhost', 'root', 'Pandaria02.');
-  if (!$connection) {
-    die('Not connected : ' . mysql_error());
-  }
-
-  // Set the active MySQL database
-  $db_selected = mysql_select_db('paulsite', $connection);
-  if (!$db_selected) {
-    die ('Can\'t use db : ' . mysql_error());
-  }
+  require ('mysqli_connect.php');
 
   // Select all the rows in the markers table
   $query = "SELECT * FROM food";
