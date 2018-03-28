@@ -17,54 +17,29 @@ function redirect_user ($page = 'index.php') {
 
 }
 
-function register_errors($dbc, $name = '', $email = '', $comment = '') {
+function register_errors($dbc, $name = '', $email = '', $comment = '', $website = "") {
 
-  $errors = array(); // Initialize error array.
+  // Opens a connection to a MySQL server
+  $connection=mysql_connect('localhost', 'root', 'Pandaria02.');
+  if (!$connection) {
+    die('Not connected : ' . mysql_error());
+  }
 
-  // Check for a first name:
-  if (empty($name)) {
-    $errors[] = 'You must input your name.';
-  } else {
-    $un = mysqli_real_escape_string($dbc, trim($username));
+  // Set the active MySQL database
+  $db_selected = mysql_select_db('sitename', $connection);
+  if (!$db_selected) {
+    die ('Can\'t use db : ' . mysql_error());
+  }
+
+
+  $query = "INSERT INTO contact (name, email, website, comment) VALUES ('$name', '$email', '$website', '$comment')";
+
+  $result = mysql_query($query);
+  if (!$result) {
+    die('Invalid query: ' . mysql_error());
+  }else{
+    redirect_user('contact_success.php');
   }
   
-  // Check for a email:
-  if (empty($email)) {
-    $errors[] = 'You must input your email.';
-  } else {
-    $fn = mysqli_real_escape_string($dbc, trim($firstname));
-  }
-  
-
-  // Check for a comment:
-  if (empty($comment)) {
-    $errors[] = 'You must input a comment.';
-  } else {
-    $pv = mysqli_real_escape_string($dbc, trim($provkey));
-  }   
-
-
-  if (empty($errors)) { // If everything's OK.
-
-    $q = 'INSERT INTO messages (name, email, website, comment) VALUES ($name, $email, $website, $comment, NOW())';
-    $r = @mysqli_query ($dbc, $q); // Run the query.
-    
-    // Check the result:
-    if (mysqli_num_rows($r) == 1) {
-
-      // Fetch the record:
-      $row = mysqli_fetch_array ($r, MYSQLI_ASSOC);
-  
-      // Return true and the record:
-      return array(true, $row);
-      
-    } else { // Not a match!
-      $errors[] = 'I don\'t have any users with that username/password combination';
-    }
-    
-  } // End of empty($errors) IF.
-  
-  // Return false and the errors:
-  return array(false, $errors);
-
+  mysqli_close($dbc); // Close the database connection.
 }

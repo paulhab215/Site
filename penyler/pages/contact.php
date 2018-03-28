@@ -7,44 +7,13 @@ include ('header.html');
 //Form submission - if so which type register/login
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    require ('includes/comment_funcs.php');
+    require ('contact_funcs.php');
     require ('../mysqli_connect.php');
 
     // Check the login:
-    list ($check, $data) = register_errors($dbc, $_POST['name'], $_POST['email'],$_POST['comment']);
+    register_errors($dbc, $_POST['name'], $_POST['email'],$_POST['comment'],$_POST['website']);
 
-    if ($check) { 
-      // Set the session data:
-      session_start();
-      $_SESSION['user_id'] = $data['user_name'];
-      
-      // Store the HTTP_USER_AGENT:
-      $_SESSION['agent'] = md5($_SERVER['HTTP_USER_AGENT']);
-
-      // Redirect:
-      redirect_user('loggedin.php');
-        
-    } else { // Unsuccessful!
-
-      // Assign $data to $errors for login_page.inc.php:
-      $errors = $data;
-
-      // Print any error messages, if they exist:
-      if (isset($errors) && !empty($errors)) {
-        $Errorlisting = '<h2>Error!</h2><br/><p class=\"error\">';
-        foreach ($errors as $msg) {
-          $Errorlisting .=  " - ";
-          $Errorlisting .=  "$msg";
-          $Errorlisting .= "<br/>";
-        }
-        $Errorlisting .= '<br/><br/>';
-        $SubmitType = "register";
-      }
-
-    }
-    mysqli_close($dbc); // Close the database connection.
   }
-}
 ?>
 
 
@@ -87,12 +56,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <input type="email" name="email" id="email" value="<?php if (isset($_POST['email'])) echo $_POST['email']; ?>" size="22" required>
           </div>
           <div class="one_third">
-            <label for="url">Website</label>
-            <input type="url" name="url" id="url" value="" size="22">
+            <label for="website">Website</label>
+            <input type="url" name="website" id="website" value="<?php if (isset($_POST['website'])) echo $_POST['website']; ?>" size="22">
           </div>
           <div class="block clear">
             <label for="comment">Your Comment</label>
-            <textarea name="comment" id="comment" value="<?php if (isset($_POST['comment'])) echo $_POST['comment']; ?>" cols="25" rows="10"></textarea>
+            <textarea name="comment" id="comment" value="<?php if (isset($_POST['comment'])) echo $_POST['comment']; ?>" cols="25" rows="10" required></textarea>
           </div>
           <div>
             <input type="submit" name="submit" value="Submit Form">
