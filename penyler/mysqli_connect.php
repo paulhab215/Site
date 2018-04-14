@@ -1,7 +1,7 @@
 <?php # Database Access - establishes connection wile setting encoding
 
 // Opens a connection to a MySQL server
-$connection=mysql_connect ('localhost', 'root', 'Pandaria02.');
+$connection=mysql_connect ('localhost', 'root', 'root');
 if (!$connection) {
 die('Not connected : ' . mysql_error());
 }
