@@ -4,15 +4,34 @@ $page_meta = 'Check out Paul Habjanetz\'s favorite food in Austin Texas. Take it
 include ('header.html');
 ?>
 <style>
-table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top;}
-table{width:100%; margin-bottom:15px;}
+#map{
+  width: 900px; 
+  height: 600px; 
+} 
 
-table, th{table-layout:auto;}
-th, td{padding:5px 8px;}
-td{border-width:0 1px;}
+/* ipad */
+@media screen and (max-width:900px){
+  #map{
+    width: 620px; 
+    height: 650px; 
+  } 
+}
 
+@media screen and (max-width:750px){
+  #map{
+    width: 475px; 
+    height: 500px; 
+  } 
+}
+
+/*iphone 8 plus / iphone x*/
+@media screen and (max-width:650px){
+  #map{
+    width: 325px; 
+    height: 450px; 
+  } 
+}
 </style>
-
 <div class="wrapper row2">
   <div id="breadcrumb" class="hoc clear"> 
     <ul>
@@ -23,11 +42,11 @@ td{border-width:0 1px;}
 </div>
 <div class="wrapper row3">
   <main class="hoc container clear"> 
-    <div class="content"> 
-      <h1>Is your Favorite my Favorite?</h1>
-      <p>Below are my top choices of food places in Austin - you can click on the name of each place to see where they are located within the city and also find more information in their infowindow. I have only been here for a year so am not a veteran in Austin food but with more time I will cover more territory.</p>
-      <div class="map_canvas" id="map" style="width: 900px; height: 500px; margin:0 auto;"></div>
+    <div class="center btmspace-20">
+      <h2 class="heading">Is your Favorite my Favorite?</h2>
+      <p>Below are my top choices of food places in Austin, pulled from the database, you can click on the name of each place to see where they are located within my city and also find more information in their infowindow. I have only been here for a couple years so am not a veteran in Austin food but with more time I will cover more territory and this map will have more baloons. </p>
       <br>
+      <div class="map_canvas" id="map" style="margin:0 auto;"></div>
     </div>
     <div class="clear"></div>
   </main>
@@ -115,18 +134,13 @@ td{border-width:0 1px;}
           clicked = true;
           infoWindow.setContent(html);
           infoWindow.open(map, marker);
-          // trying to hide the button
-          // $( '.infoWindow' ).parent().parent().siblings().find( 'img' ).hide();
-          //$( '[src="http://maps.gstatic.com/mapfiles/mv/imgs8.png"]' ).hide();
-      });
+     });
 
       // trying to close the window on click
       google.maps.event.addListener(infoWindow, 'closeclick', function(){       
           clicked = false;
       });
     }
-
-
 
     function downloadUrl(url, callback) {
       var request = window.ActiveXObject ?
