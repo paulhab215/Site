@@ -91,7 +91,7 @@
       <li class="three_quarter first borderedbox">
         <div class="inspace-30">
           <h6 class="heading">Mobile Friendly</h6>
-          <p class="nospace">No website is useful if it can be properly viewed on mobile and tablets. This website has been optimized for mobile and tablet views. Bootstrap along with custom page html styling allows making all resolutions a breeze.</p>
+          <p class="nospace">No website is useful if it can not be properly viewed on mobile and tablets. This website has been optimized for mobile and tablet views. Bootstrap along with custom page html styling allows making all resolutions a breeze.</p>
         </div>
       </li>      
       <li class="one_quarter"><a href="https://getbootstrap.com/">
