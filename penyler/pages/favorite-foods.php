@@ -8,12 +8,30 @@ include ('header.html');
   width: 900px; 
   height: 600px; 
 } 
+#infoWindow {
+    width: 450px;
+    height: 200px;
+}
+.foodDetails {
+    padding: 0px 20px 0px 10px;
+    float: left;
+    height:175px;
+    width:275px; 
+} 
 
 /* ipad */
 @media screen and (max-width:900px){
   #map{
     width: 620px; 
     height: 650px; 
+  } 
+  #infoWindow {
+      width: 420px;
+  }
+  .foodDetails {
+      padding: 0px 10px 0px 7px;
+      height:135px;
+      width:210px; 
   } 
 }
 
@@ -22,13 +40,29 @@ include ('header.html');
     width: 475px; 
     height: 500px; 
   } 
+  #infoWindow {
+      width: 280px;
+  }
+  .foodDetails {
+      padding: 0px 10px 0px 7px;
+      height:120px;
+      width:175px; 
+  } 
 }
 
 /*iphone 8 plus / iphone x*/
 @media screen and (max-width:650px){
   #map{
-    width: 325px; 
+    width: 328px; 
     height: 450px; 
+  } 
+  #infoWindow {
+      width: 200px;
+  }
+  .foodDetails {
+      padding: 0px 8px 0px 5px;
+      height:90px;
+      width:130px; 
   } 
 }
 </style>
@@ -96,8 +130,8 @@ include ('header.html');
       var address = searchAddr;
       geocoder.geocode( { 'address': address}, function(results, status) {
         if (status == google.maps.GeocoderStatus.OK) {
-          var html = "<div id='mapContent'>";
-          html += "<h1 class='mapName'>" + name + "</h1><p> (" + address + ")</p></div><div id='mapBody'><img src='../images/food/food" + foodpic + ".jpg' class='foodDetails'><p>" + bio + "<br/><br/>Check it on out on <a href = "+ yelplink +">yelp</a>!</p></div>";
+          var html = "<div id='infoWindow'><div id='mapContent'>";
+          html += "<h1 class='mapName'>" + name + "</h1></br><p> (" + address + ")</p></div><div id='mapBody'><img src='../images/food/food" + foodpic + ".jpg' class='foodDetails'><p>" + bio + "<br/><br/>Check it on out on <a href = "+ yelplink +">yelp</a>!</p></div></div>";
           map.setCenter(results[0].geometry.location);
           createMarker(results[0].geometry.location,html);              
         } else if (status === google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {    

@@ -25,8 +25,7 @@
 
   // Iterate through the rows, printing XML nodes for each
   while ($row = @mysql_fetch_assoc($result)){
-    $state = $row['state'];
-    $state = substr($state, strpos($state, "*") + 1);
+    $state = $row['state_abbrv'];
     $addy = parseToXML($row['street'])." ".parseToXML($row['city'])." ".parseToXML($state)." ".parseToXML($row['zip']);
     // Add to XML document node
     echo '<marker ';
