@@ -3,7 +3,7 @@
 <head>
 <title>Paul Habjanetz</title>  
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="description" content="Welcome to Paul Habjanetz's website. Learn him about his career, tastes, projects, and skills. Beneath lies everything you need to contact him and more.">
+<meta name="description" content="Welcome to Paul Habjanetz's website. Learn more about his career, tastes, projects, and skills. Beneath lies everything you need to contact him and more.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
