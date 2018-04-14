@@ -24,7 +24,6 @@
               <li><a href="projects/SocialNetwork/social.html">Social Network Template</a></li>
               <li><a href="pages/jsgrid.php">JS Grid</a></li>
               <li><a href="pages/frappe.php">Frappe Charts</a></li>
-
             </ul>
           </li>
           <li><a class="drop" href="pages/aboutme.php">About Me</a>
@@ -48,8 +47,8 @@
     <ul class="nospace clear services">
       <li class="one_half first borderedbox">
         <div class="inspace-30">
-          <h6 class="heading">It's good to stay current,</h6>
-          <p class="nospace">Why not have a look at some of my favorite coding sites. From reading to practicing - there is always plenty of new things to learn! Use those eyes to read my friend.</p>
+          <h6 class="heading">Stay Current</h6>
+          <p class="nospace">Why not have a look at some of my favorite coding sites. From reading to practicing, there is always plenty of new things to learn! Use those eyes to read my friend.</p>
         </div>
       </li>
       <li class="one_quarter"><a href="https://stackoverflow.com/">
@@ -80,6 +79,25 @@
       <li class="one_quarter"><a href="https://css-tricks.com/">
         <figure><img src="images/blogs/css.png" alt="">
           <figcaption>CSS-Tricks</figcaption>
+        </figure>
+        </a></li>
+    </ul>
+    <div class="clear"></div>
+  </main>
+</div>
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <ul class="nospace clear services">
+      <li class="three_quarter first borderedbox">
+        <div class="inspace-30">
+          <h6 class="heading">Mobile Friendly</h6>
+          <p class="nospace">No website is useful if it can be properly viewed on mobile and tablets. This website has been optimized for mobile and tablet views. Bootstrap along with custom page html styling allows making all resolutions a breeze.</p>
+        </div>
+      </li>      
+      <li class="one_quarter"><a href="https://getbootstrap.com/">
+        <figure>
+          <img src="images/backgrounds/phone.png" alt="phone friendly">
+          <figcaption>Bootstrap</figcaption>
         </figure>
         </a></li>
     </ul>

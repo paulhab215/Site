@@ -231,7 +231,7 @@ td{border-width:0 1px;}
 body{color:#FFFFFF; background-color:#000000;}
 a{color:#A3C9D3;}
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
-hr, .borderedbox{border-color:#D7D7D7;}
+hr, .borderedbox{border-color:#D7D7D7; padding: 3px;}
 label span{color:#FF0000; background-color:inherit;}
 input:focus, textarea:focus, *:required:focus{border-color:#A3C9D3;}
 .overlay{color:#FFFFFF; background-color:inherit;}
