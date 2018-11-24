@@ -108,10 +108,10 @@
   <footer id="footer" class="hoc clear center"> 
     <h3 class="heading uppercase">Habjanetz</h3>
     <ul class="faico clear">
-      <li><a class="faicon-dribble" href="https://www.reddit.com/"><i class="fa fa-dribbble"></i></a></li>
-      <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-      <li><a class="faicon-github" href="https://github.com/paulhab215"><i class="fa fa-github"></i></a></li>
-      <li><a class="faicon-google-plus" href="https://plus.google.com/u/0/111465776023951134474"><i class="fa fa-google-plus"></i></a></li>
+      <li><a class="faicon-dribble" style="padding-top:0px;" href="https://www.reddit.com/"><i class="fa fa-dribbble"></i></a></li>
+      <li><a class="faicon-linkedin" style="padding-top:0px;" href="#"><i class="fa fa-linkedin"></i></a></li>
+      <li><a class="faicon-github" style="padding-top:0px;" href="https://github.com/paulhab215"><i class="fa fa-github"></i></a></li>
+      <li><a class="faicon-google-plus" style="padding-top:0px;" href="https://plus.google.com/u/0/111465776023951134474"><i class="fa fa-google-plus"></i></a></li>
     </ul>
   </footer>
   <div id="copyright" class="hoc clear center"> 

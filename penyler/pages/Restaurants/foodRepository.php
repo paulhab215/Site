@@ -1,5 +1,5 @@
 <?php
-
+// error_log("update ".$data['name'], 3, "../../errors.txt");
 include "food.php";
 
 class foodRepository {
@@ -33,65 +33,50 @@ class foodRepository {
     }
 
     public function getById($food_id) {
-        $sql = "SELECT * FROM food WHERE food_id = :food_id";
-        $q = $this->connection->prepare($sql);
-        $q->bindParam(":food_id", $food_id, PDO::PARAM_INT);
-        $q->execute();
-        $rows = $q->fetchAll();
-        return $this->read($rows[0]);
+                error_log("\n ".$food_id, 3, "../../errors.txt");
+
+        $conn = $this->db();
+        $sql = "SELECT * FROM food WHERE food_id = '".$food_id."'";
+        $result = mysqli_query($conn, $sql);
+        $final = array();
+        while ($row = mysqli_fetch_row($result)){
+            array_push($final, $this->read($row));
+        }
+        error_log("\n ".print_r($final,true), 3, "../../errors.txt");
+
+        return $final;
     }
 
     public function getAll() {
-        // $name = "%" . $filter["name"] . "%";
         $conn = $this->db();
         $sql = "SELECT * FROM food";
-
         $result = mysqli_query($conn, $sql);
         $final = array();
         while ($row = @mysqli_fetch_assoc($result)){
             array_push($final, $this->read($row));
         }
-
         return $final;
     }    
 
 
     public function insert($data) {
-        $sql = "INSERT INTO food (name, street, secondary_street, city, zip) VALUES (:name, :street, :secondary_street, :city, :zip)";
-        $q = $connection->prepare($sql);
-        $q->bindParam(":name", $data['name']);
-        $q->bindParam(":street", $data['street']);
-        $q->bindParam(":secondary_street", $data['secondary_street']);
-        $q->bindParam(":city", $data['city']);
-        $q->bindParam(":zip", $data['zip']);
-        // $q->bindParam(":bio", $data['bio']);
-        // $q->bindParam(":yelp_link", $data['yelp_link']);
-        // $q->bindParam(":type", $data['type']);
-        // $q->bindParam(":rank", $data['rank'], PDO::PARAM_INT);
-        $q->execute();
-        return $this->getById($this->connection->lastInsertId());
+        $conn = $this->db();        
+        $sql = "INSERT INTO food (name, street, secondary_street, city, zip) VALUES ('".$data['name']."', '".$data['street']."', '".$data['secondary_street']."', '".$data['city']."', '".$data['zip']."')";
+        $result = mysqli_query($conn, $sql);
+
+        return $this->getById(mysqli_insert_id($conn));
     }
 
     public function update($data) {
-        $sql = "UPDATE food SET name = :name, street = :street, secondary_street = :secondary_street, city = :city, zip = :zip WHERE food_id = :food_id";
-        $q = $this->connection->prepare($sql);
-        $q->bindParam(":name", $data['name']);
-        $q->bindParam(":street", $data['street']);
-        $q->bindParam(":secondary_street", $data['secondary_street']);
-        $q->bindParam(":city", $data['city']);
-        $q->bindParam(":zip", $data['zip']);
-        // $q->bindParam(":bio", $data['bio']);
-        // $q->bindParam(":yelp_link", $data['yelp_link']);
-        // $q->bindParam(":type", $data['type']);
-        // $q->bindParam(":rank", $data['rank'], PDO::PARAM_INT);
-        $q->execute();
+        $conn = $this->db();
+        $sql = "UPDATE food SET name = '".$data['name']."', street = '".$data['street']."', secondary_street = '".$data['secondary_street']."', city = '".$data['city']."', zip = '".$data['zip']."' WHERE food_id = '".$data['food_id']."'";
+        $result = mysqli_query($conn, $sql);
     }
 
     public function remove($food_id) {
-        $sql = "DELETE FROM food WHERE food_id = :food_id";
-        $q = $this->connection->prepare($sql);
-        $q->bindParam(":food_id", $food_id, PDO::PARAM_INT);
-        $q->execute();
+        $conn = $this->db();
+        $sql = "DELETE FROM food WHERE food_id = ".$food_id."";
+        $result = mysqli_query($conn, $sql);
     }
 
 }
