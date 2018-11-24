@@ -33,17 +33,13 @@ class foodRepository {
     }
 
     public function getById($food_id) {
-                error_log("\n ".$food_id, 3, "../../errors.txt");
-
         $conn = $this->db();
         $sql = "SELECT * FROM food WHERE food_id = '".$food_id."'";
         $result = mysqli_query($conn, $sql);
         $final = array();
-        while ($row = mysqli_fetch_row($result)){
+        while ($row = @mysqli_fetch_assoc($result)){
             array_push($final, $this->read($row));
         }
-        error_log("\n ".print_r($final,true), 3, "../../errors.txt");
-
         return $final;
     }
 
@@ -57,7 +53,6 @@ class foodRepository {
         }
         return $final;
     }    
-
 
     public function insert($data) {
         $conn = $this->db();        
@@ -78,7 +73,6 @@ class foodRepository {
         $sql = "DELETE FROM food WHERE food_id = ".$food_id."";
         $result = mysqli_query($conn, $sql);
     }
-
 }
 
 ?>

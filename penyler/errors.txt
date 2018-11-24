@@ -1,0 +1,18 @@
+beforeeeeeeee
+Array
+(
+    [0] => food Object
+        (
+            [food_id] => 26
+            [name] => ssss
+            [street] => ssss
+            [secondary_street] => sss
+            [city] => sss
+            [zip] => 22223
+            [bio] => 
+            [yelp_link] => 
+            [type] => 
+            [rank] => 
+        )
+
+)
