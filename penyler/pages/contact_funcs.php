@@ -24,12 +24,12 @@ function register_errors($dbc, $name = '', $email = '', $comment = '', $website 
 
   $query = "INSERT INTO contact (name, email, website, comment) VALUES ('$name', '$email', '$website', '$comment')";
 
-  $result = mysql_query($query);
+  $result = mysqli_query($connection, $query);
   if (!$result) {
-    die('Invalid query: ' . mysql_error());
+    error_log("Did not pull contacts data", 3, "../errors.txt");
   }else{
     redirect_user('contact_success.php');
   }
   
-  mysqli_close($dbc); // Close the database connection.
+  // mysqli_close($connection); // Close the database connection.
 }

@@ -1,4 +1,10 @@
  <?php 
+  include "pages/Restaurants/foodRepository.php";
+
+  $food = new foodRepository();
+
+  $result = $food->getAll();
+  // error_log(print_r($result,true), 3, "errors.txt");
 
   function parseToXML($htmlStr)
   {
@@ -9,31 +15,24 @@
     $xmlStr=str_replace("&",'&amp;',$xmlStr);
     return $xmlStr;
   }
-  require ('mysqli_connect.php');
-
-  // Select all the rows in the markers table
-  $query = "SELECT * FROM food";
-  $result = mysql_query($query);
-  if (!$result) {
-    die('Invalid query: ' . mysql_error());
-  }
 
   header("Content-type: text/xml");
 
   // Start XML file, echo parent node
   echo '<markers>';
 
-  // Iterate through the rows, printing XML nodes for each
-  while ($row = @mysql_fetch_assoc($result)){
-    $state = $row['state_abbrv'];
-    $addy = parseToXML($row['street'])." ".parseToXML($row['city'])." ".parseToXML($state)." ".parseToXML($row['zip']);
+  // Iterate through the rows printing XML nodes for each
+  foreach ($result as $obj) {
+    $state = $obj->state_abbrv;
+    $addy = parseToXML($obj->street)." ".parseToXML($obj->city)." ".parseToXML($state)." ".parseToXML($obj->zip);
+
     // Add to XML document node
     echo '<marker ';
-    echo 'name="' . parseToXML($row['name']) . '" ';
+    echo 'name="' . parseToXML($obj->name) . '" ';
     echo 'address="'.$addy.'" ';
-    echo 'bio="' . parseToXML($row['bio']) . '" ';
-    echo 'yelp="' . parseToXML($row['yelp_link']) . '" ';
-    echo 'foodpic="' . parseToXML($row['food_id']) . '" ';
+    echo 'bio="' . parseToXML($obj->bio) . '" ';
+    echo 'yelp="' . parseToXML($obj->yelp_link) . '" ';
+    echo 'foodpic="' . parseToXML($obj->food_id) . '" ';
     echo '/>';
   }
 
