@@ -102,7 +102,7 @@ include ('header.html');
         zoom: 12
       });
 
-      downloadUrl('../search-food.php', function(data) {
+      downloadUrl('../search_food.php', function(data) {
         if(data.status == 200)//response okie
         {
             var xmlResponse = data.responseXML;

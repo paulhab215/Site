@@ -1,5 +1,5 @@
  <?php 
-  include "pages/Restaurants/foodRepository.php";
+  include "foodRepository.php";
 
   $food = new foodRepository();
 

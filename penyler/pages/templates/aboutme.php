@@ -3,7 +3,7 @@ $page_name = 'About Me';
 $page_meta = 'Learn more about Paul Habjanetz, Take a look at his career accomplishments or his favorite foods in Austin Texas. Checkout the latest on Paul Habjanetz.';
 include ('header.html');
 ?>
-<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="../../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </div>
 <div class="wrapper row2">
   <div id="breadcrumb" class="hoc clear"> 

@@ -18,21 +18,21 @@
       <nav id="mainav" class="clear"> 
         <ul class="clear">
           <li class="active"><a href="index.php">Home</a></li>
-          <li><a class="drop" href="pages/projects.php">Projects</a>
+          <li><a class="drop" href="pages/templates/projects.php">Projects</a>
             <ul>
               <li><a href="projects/WeatherApp/index.htm">Weather API</a></li>
               <li><a href="projects/SocialNetwork/social.html">Social Network Template</a></li>
-              <li><a href="pages/jsgrid.php">JS Grid</a></li>
-              <li><a href="pages/frappe.php">Frappe Charts</a></li>
+              <li><a href="pages/templates/jsgrid.php">JS Grid</a></li>
+              <li><a href="pages/templates/frappe.php">Frappe Charts</a></li>
             </ul>
           </li>
-          <li><a class="drop" href="pages/aboutme.php">About Me</a>
+          <li><a class="drop" href="pages/templates/aboutme.php">About Me</a>
             <ul>
-              <li><a href="pages/resume.php">Resume</a></li>
-              <li><a href="pages/favorite-foods.php">Favorite Foods</a></li>
+              <li><a href="pages/templates/resume.php">Resume</a></li>
+              <li><a href="pages/templates/favorite-foods.php">Favorite Foods</a></li>
             </ul>
           </li>
-          <li><a href="pages/contact.php">Contact</a></li>
+          <li><a href="pages/templates/contact.php">Contact</a></li>
         </ul>
       </nav>
     </header>

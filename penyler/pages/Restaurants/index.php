@@ -18,11 +18,6 @@ switch($_SERVER["REQUEST_METHOD"]) {
             "city" => $_POST["city"],
             "zip" => $_POST["zip"],
         ));
-        error_log("beforeeeeeeee\n", 3, "../../errors.txt");
-
-        error_log(print_r($result,true), 3, "../../errors.txt");
-
-
         break;
 
     case "PUT":

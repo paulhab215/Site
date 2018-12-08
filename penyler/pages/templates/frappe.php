@@ -30,7 +30,6 @@ include ('header.html');
   } 
 }
 </style>
-<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </div>
 <div class="wrapper row2">
   <div id="breadcrumb" class="hoc clear"> 

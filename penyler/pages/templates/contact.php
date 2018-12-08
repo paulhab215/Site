@@ -7,12 +7,11 @@ include ('header.html');
 //Form submission - if so which type register/login
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    require ('contact_funcs.php');
-    require ('../mysqli_connect.php');
+    require ('../contact_funcs.php');
+    require ('../../mysqli_connect.php');
 
     // Check the login:
     register_errors($dbc, $_POST['name'], $_POST['email'],$_POST['comment'],$_POST['website']);
-
   }
 ?>
 
@@ -27,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <main class="hoc container clear"> 
  <div class="sidebar one_quarter first"> 
       <div class="sdb_holder">
-        <img src="../images/paul/1.jpg" alt="Pauls handsome face">
+        <img src="../../images/paul/1.jpg" alt="Pauls handsome face">
       </div>
       <div class="sdb_holder">
         <h6>Contact Directly</h6>

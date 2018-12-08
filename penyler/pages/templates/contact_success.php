@@ -13,7 +13,7 @@ include ('header.html');
   <main class="hoc container clear"> 
  <div class="sidebar one_quarter first"> 
       <div class="sdb_holder">
-        <img src="../images/paul/1.jpg" alt="Pauls handsome face">
+        <img src="../../images/paul/1.jpg" alt="Pauls handsome face">
       </div>
     </div>
     <div class="content three_quarter"> 

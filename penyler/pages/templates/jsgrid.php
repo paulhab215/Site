@@ -32,7 +32,7 @@ include ('header.html');
 
         $.ajax({
             type: "GET",
-            url: "Restaurants/index.php"
+            url: "../Restaurants/index.php"
         }).done(function(food) {
 
             $("#jsGrid").jsGrid({
@@ -50,7 +50,7 @@ include ('header.html');
                     loadData: function(filter) {
                      return $.ajax({
                             type: "GET",
-                            url: "Restaurants/index.php",
+                            url: "../Restaurants/index.php",
                             dataType: 'json',
                             success: function (result) {
                                 return result;
@@ -64,21 +64,21 @@ include ('header.html');
                     insertItem: function(item) {
                         return $.ajax({
                             type: "POST",
-                            url: "Restaurants/index.php",
+                            url: "../Restaurants/index.php",
                             data: item
                         });
                     },
                     updateItem: function(item) {
                         return $.ajax({
                             type: "PUT",
-                            url: "Restaurants/index.php",
+                            url: "../Restaurants/index.php",
                             data: item
                         });
                     },
                     deleteItem: function(item) {
                         return $.ajax({
                             type: "DELETE",
-                            url: "Restaurants/index.php",
+                            url: "../Restaurants/index.php",
                             data: item
                         });
                     }
